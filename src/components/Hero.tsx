@@ -1,0 +1,61 @@
+"use client";
+
+import Image from "next/image";
+// import { MapPin, Calendar } from "lucide-react";
+// import { Input } from "./ui/input";
+// import { CalendarComponent } from "./ui/datePicker";
+import ContactModal from "@/components/QuoteModal";
+
+export default function Hero() {
+    return (
+        <section className="relative bg-white overflow-hidden">
+            <div className="relative max-w-7xl mx-auto px-6 lg:px-8 pt-20 pb-32 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mt-5">
+                
+                {/* Left side: text + badges */}
+                <div className="space-y-6">
+                    <h1 className="text-4xl sm:text-5xl font-bold text-gray-900">
+                        The home of coach and minibus hire
+                    </h1>
+
+                    <p className="text-gray-700 max-w-md">
+                        Experience reliable UK-wide coach and minibus hire with <strong>UK Bus Rentals</strong> — perfect for corporate events, school trips, airport transfers, and private journeys.
+                    </p>
+
+                    {/* Request a Quote button - now left-aligned and below description */}
+                    <div className="flex justify-start">
+                        <ContactModal />
+                    </div>
+
+                    <p className="text-gray-700 max-w-md">
+                        Or speak directly with our team at{" "}
+                        <a href="tel:+443301132111">
+                            <span className="text-primary">+44 330 113 2111</span>
+                        </a>
+                    </p>
+                </div>
+
+                {/* Right side: hero image */}
+                <div className="flex justify-center lg:justify-end relative">
+                    <Image
+                        src="/images/bus-hire-transparent.png"
+                        width={600}
+                        height={400}
+                        alt="UK Bus Rentals coach and minibus hire services"
+                        className="object-contain z-10 relative h-auto"
+                        quality={100}        // ✅ makes the image sharper
+                        priority              // ✅ loads the hero image first
+                    />
+                    <Image
+                        src="/images/Frame.png"
+                        width={600}
+                        height={400}
+                        alt="UK Bus Rentals decorative frame"
+                        className="object-contain absolute right-[-20px] w-[30vw] max-w-[350px] lg:max-w-[600px] h-auto lg:h-[520px] hidden lg:block"
+                        quality={100}        // ✅ keeps the frame crisp
+                        unoptimized           // ✅ ensures exact original quality
+                    />
+                </div>
+            </div>
+        </section>
+    );
+}
