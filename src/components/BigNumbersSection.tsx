@@ -11,12 +11,12 @@ export default function BigNumbersSection() {
           Our Achievements
         </span>
         <h2 className="mt-4 text-3xl lg:text-4xl font-bold text-gray-900">
-          Trusted by passengers across the UK
+          Trusted by passengers and partners nationwide
         </h2>
         <p className="mt-4 text-gray-700 max-w-2xl">
-          At <strong>UK Bus Rentals</strong>, we are proud to provide safe, reliable, and comfortable transport
-          for thousands of customers every week. Our dedication to excellence and customer satisfaction
-          has made us one of the most trusted coach and minibus hire providers in the country.
+          At <strong>UK Bus Rentals</strong>, we take pride in offering safe, reliable, and comfortable transport 
+          across the UK. From school runs and corporate events to private tours and group travel, 
+          thousands of passengers rely on our professional service every year.
         </p>
 
         {/* Grid */}
@@ -26,18 +26,19 @@ export default function BigNumbersSection() {
             <p className="text-sm uppercase tracking-wide opacity-80">
               Passengers Transported
             </p>
-            <p className="mt-2 text-5xl font-extrabold">4,900,000+</p>
+            <p className="mt-2 text-5xl font-extrabold">400,000+</p>
             <p className="mt-4 text-lg opacity-90">
-              Every year, millions of passengers choose UK Bus Rentals for dependable travel across
-              the UK — from schools and businesses to private groups and events.
+              Each year, hundreds of thousands of passengers choose UK Bus Rentals for 
+              dependable, comfortable journeys across the country — from local communities 
+              to national organisations.
             </p>
           </div>
 
           {/* Smaller Cards */}
           <div className="flex flex-col gap-6">
             <div className="bg-blue-50 p-8 rounded-2xl shadow-sm">
-              <p className="text-2xl font-bold text-blue-600">3,000+</p>
-              <p className="mt-1 text-gray-700">Routes operated each year</p>
+              <p className="text-2xl font-bold text-blue-600">1,800+</p>
+              <p className="mt-1 text-gray-700">Journeys completed annually</p>
             </div>
             <div className="bg-blue-50 p-8 rounded-2xl shadow-sm">
               <p className="text-2xl font-bold text-blue-600">24/7</p>
